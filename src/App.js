@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react';
+import GreenLightRedLight from './GreenLightRedLight';
+import {Route,Routes, } from 'react-router-dom';
+import UserRegister from './UserRegister';
+import Response from './Response';
+import Score from './Score.js'
+import Fail from './Fail';
+import Rule from './Rule';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+  <>
+  <Routes>
+  <Route path="/" exact element={<UserRegister/>}/>
+  <Route path="/greenred" exact element={<GreenLightRedLight/>}/>
+  <Route path="/response" exact element={<Response/>}/>
+  <Route path="/score" exact element={<Score/>}/>
+  <Route path="/fail" exact element={<Fail/>}/>
+  <Route path="/rule" exact element={<Rule/>}/>
+  
+  
+  
+  </Routes>
+  
+  {/* <GreenLightRedLight/> */}
+  </>
   );
 }
 

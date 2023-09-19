@@ -1,0 +1,27 @@
+.container{
+    max-width: 100%;
+    max-height: 100vh;
+    margin:15px;
+}
+.container .image{
+    max-width: 100%;
+    max-height:100vh;
+    display: flex;
+    justify-content: center;
+}
+.image img{
+    width:100px;
+}
+.container .headers{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:5px;
+}
+h1 {
+    font-size: 30px !important;     
+}
+.headers .header_two{
+    margin-top: -20px;
+}
+
